@@ -1,6 +1,5 @@
-/* CSS Variables for Color Scheme */
 :root {
-    --primary-color: #ccc9e7; /* Light purple */
+    --primary-color: #3020bb; /* Light purple */
     --secondary-color: #6c6f7d; /* Muted gray */
     --accent-color: #9db39d; /* Soft green */
     --text-color: #ffffff; /* White */
@@ -10,21 +9,141 @@
     --link-hover: #b7b8b2; /* Lighter gray for link hover */
 }
 
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     color: var(--text-color);
     background-color: #f0f0f0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
 header nav {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+.highlighted-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.highlighted-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlighted-content img {
+    width: 150px;
+    height: auto;
+}
+
+.history-section {
+    background-color: #e0e0e0;
+    padding: 40px;
+    text-align: center;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure-section {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 120px;
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #d3c4e1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: auto;
 }
 
 nav a {
@@ -133,12 +252,6 @@ footer a {
 
 footer a:hover {
     color: var(--hover-color);
-}
-
-footer img {
-    width: 30px;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
 }
 
 footer img:hover {

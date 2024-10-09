@@ -5,53 +5,79 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="About page for the whitewater rafting website">
     <meta name="author" content="Emmanuel Chidiebere">
-    <link rel="preconnect" href="https://fonts.google.com/share?selection.family=Afacad+Flux:wght@100..1000">
-    <link rel="preconnect" href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flux:wght@100..1000&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Whitewater Rafting Adventures</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="logo">
             <img src="images/raftingM.jpg" alt="rafting momentum" width="200">
+        </div>
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-        <main>
-            <div class="hero">
-                <img src="images/rafting21_600.webp" alt="rafting21" class="hero-img">
-                <h1>WHITE WATER RAFTING ADVENTURES</h1>
-                <article>
-                    <img src="images/salmon-kayak3.webp" alt="salmon-kayak3" class="client-img">
-                    <p>We are your gateway to unlimited pleasure. 
-                      <h4>We offer all kinds of rafting services to keep you coming back for more, and building memories with your loved ones.</h4>
-                    </p>
-                </article>
+
+    <main>
+        <!-- Section 1: White Water Rafting -->
+        <section class="highlighted-section">
+            <h2>White Water Rafting</h2>
+            <div class="highlighted-content">
+                <p>Experience the thrill of navigating challenging rapids while surrounded by stunning scenery. Join our experienced guides as they lead you through unforgettable adventures, ensuring safety and excitement at every turn.</p>
+                <img src="images/rafting9_600.webp" alt="rafting9_600">
             </div>
-    
-            <section>
-                <h2>History</h2>
-                <p>Rafting Momentum was founded in the year 1999, and we are proud to say that our mission and vision aligns with your pleasure, safety, and wellbeing. </p>
-            </section>
-    
-            <section>
-                <h2>Adventure Awaits You!</h2>
-                <img src="images/rafting9_600.webp" alt="Rafting adventure 9">
-                <img src="images/rafting18_600.webp" alt="Rafting adventure 18">
-                <img src="images/rafting52_600.webp" alt="Rafting adventure 52">
-                <img src="images/rafting53_600.webp" alt="Rafting adventure 53">
-                <img src="images/rafting59_600.webp" alt="Rafting adventure 59">
-            </section>
-        </main>
+        </section>
+
+        <!-- Section 2: History -->
+        <section class="history-section">
+            <h2>History</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>White water rafting began as a recreational activity in the 1970s and has since evolved into a popular adventure sport, attracting thrill-seekers from around the world.<br>
+                     Our guides are passionate about sharing the sport's rich history and promoting safety.</p>
+                </div>
+                <img src="images/rafting18_600.webp" alt="rafting18_600">
+                <div class="history-text">
+                    <p>Today, rafting is enjoyed on rivers of all classes, showcasing the beauty of nature and the spirit of adventure. Our mission is to preserve these rivers and share their stories with you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Adventure Awaits You -->
+        <section class="adventure-section">
+            <h2>Adventure Awaits You</h2>
+            <div class="adventure-gallery">
+                <div class="gallery-item">
+                    <img src="images/rafting21_600.webp" alt="rafting21_600">
+                    <p>Los Dientes del Diablo - Tackle the fierce rapids of "The Teeth of the Devil," a challenging course that promises an adrenaline rush.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rafting52_600.webp" alt="rafting52_600">
+                    <p>Big Mallard - Experience the thrilling currents of Big Mallard, where excitement and natural beauty collide.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rafting53_600.webp" alt="rafting53_600">
+                    <p>Half Day Adventure - Ideal for families, this adventure provides a fun introduction to the world of white water rafting.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rafting59_600.webp" alt="rafting59_600">
+                    <p>Thrill Seeker's Challenge - For the experienced rafter, this course offers an exhilarating test of skill and courage.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Rafting Momentum | Designed by Emmanuel Chidiebere</p>
-        <a href="https://facebook.com"><img src="images/icons8-facebook.svg" alt="Facebook"></a>
-        <a href="https://twitter.com"><img src="images/icons8-twitterx.svg" alt="Twitter"></a>
-        <a href="https://instagram.com"><img src="images/icons8-instagram.svg" alt="Instagram"></a>
+        <div class="footer-icons">
+            <p>&copy; 2024 Rafting Momentum | Designed by Emmanuel Chidiebere</p>
+            <a href="https://facebook.com"><img src="images/icons8-facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/icons8-twitterx.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/icons8-instagram.svg" alt="Instagram"></a>    
+        </div>
     </footer>
 </body>
 </html>
