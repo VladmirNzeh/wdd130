@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #3020bb; /* Light purple */
+    --primary-color: #4b3bd8; /* Light purple */
     --secondary-color: #6c6f7d; /* Muted gray */
-    --accent-color: #9db39d; /* Soft green */
+    --accent-color: #a9e3a9; /* Soft green */
     --text-color: #ffffff; /* White */
     --footer-bg: #2e3138; /* Dark gray */
     --hero-overlay: rgba(46, 49, 56, 0.7); /* Dark transparent overlay */
@@ -21,7 +21,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+    color: var(--primary-color);
     background-color: #f0f0f0;
 }
 
@@ -209,7 +209,7 @@ section {
     padding: 3rem;
     text-align: center;
     background-color: var(--secondary-color);
-    color: white;
+    color: ;
     border-radius: 10px;
     margin: 2rem 0;
 }
@@ -371,7 +371,6 @@ button[type="submit"]:hover {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: white;
     background-color: var(--background-color);
 }
 
@@ -380,7 +379,7 @@ body {
     display: inline-block;
     padding: 0.5rem 1.5rem;
     background-color: var(--accent-color);
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -440,7 +439,7 @@ body {
 }
 
 .newsletter form button {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: #fff;
     border: none;
     cursor: pointer;
