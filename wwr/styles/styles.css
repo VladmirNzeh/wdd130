@@ -353,7 +353,7 @@ h2 {
 }
 
 button[type="submit"] {
-    background-color: #28a745;
+    background-color:  #9db39d;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -364,7 +364,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #218838;
+    background-color:  #9db39d;
 }
 
 
@@ -374,10 +374,6 @@ body {
     color: white;
     background-color: var(--background-color);
 }
-
-
-
-
 
 
 .cta-button {
@@ -391,7 +387,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #e9d8a6;
+    background-color:  #9db39d;
 }
 
 /* Main Content Grid */
@@ -455,3 +451,141 @@ body {
     background-color: var(--hover-color);
 }
 
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 2rem auto; /* Adds space above and below the section */
+    max-width: 900px; /* Centers content and adds space around the section */
+    border-radius: 8px; /* Adds rounded edges for a polished look */
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0; /* Ensure no extra spacing on top */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem; /* Adds more whitespace around the button text */
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem; /* Separates the button from the heading */
+}
+
+.cta-button:hover {
+    background-color:  #9db39d;
+    color: #001219;
+}
+/* Trip Descriptions Section */
+.trips-descriptions {
+    padding: 2rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between grid items */
+}
+
+/* Heading Style */
+.trips-descriptions h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    grid-column: span 3; /* Make heading span all columns */
+}
+
+/* Individual Image Styling */
+.trip img {
+    width: 100%;
+    max-width: 300px; /* Limit image size */
+    border-radius: 5px;
+    margin: 0 auto 1rem auto; /* Center the image and add bottom margin */
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Content Card without Image */
+.trip {
+    background-color: var(--footer-bg);
+    border-radius: 8px;
+    padding: 1rem; /* Adjust padding for more breathing room */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.trip:hover {
+    transform: translateY(-5px);
+}
+
+.trip h3 {
+    font-size: 1.6rem; /* Slightly smaller heading */
+    color: var(--accent-color);
+    margin-top: 0.5rem;
+}
+
+.trip p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .trips-descriptions {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    }
+
+    .trip img {
+        max-width: 250px; /* Further reduce image size on larger screens */
+    }
+}
+
+
+/* Trips Table Section */
+.trips-table {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.trips-table h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color:  #9db39d;
+}
